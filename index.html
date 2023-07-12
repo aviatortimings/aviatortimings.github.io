@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            line-height: 3;
+            background-color: black;
+        }
+        .predictor{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .full{
+            height: 100vh;
+            width:50vw;
+        }
+        input{
+            height: 50px;
+        }
+        @media only screen and (max-width: 700px){
+            .full{
+                width:100vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container w-sm-100 full mx-auto p-2 predictor">
+        <div class="container  bg-dark text-center">
+        <div class="body p-2">
+            <img src="images.png" alt="logo">
+            <h2 class="text-danger pt-2">Timings</h2>
+        </div>
+        <div class="odd text-light">
+            <h1>3000.00x</h1>
+        </div>
+        <div class="buttons">
+            <button class="btn btn-danger form-control m-1" onclick="alert('ACTIVATE TO CONTINUE')">Get prediction</button>
+        <button class="btn btn-danger form-control m-1" onclick="prompt('ENTER YOUR M-PESA TRANSACTION CODE TO ACCESS ODDS');alert('INVALID TRANSACTION CODE');">Activate!</button>
+        </div>
+
+        <div class="footer text-light">
+            <a class="text-light text-decoration-none btn border border-danger" href="https://wa.me/254742152058">CLICK HERE TO CONTACT THE ADMIN</a>
+        </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
